@@ -10,7 +10,7 @@ composer require my-monitor/ping-sdk
 ```
 
 then in `app.php` provideres array add service provider
-```
+```php
     //
     MyMonitor\PingSdk\PingSdkServiceProvider::class,
 ```
