@@ -13,9 +13,11 @@ class PingSdkServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/mymonitor-ping.php' => config_path('mymonitor-ping.php'),
-        ], 'config');
+        if(! class_exists(\Laravel\Lumen\Application::class)) {
+            $this->publishes([
+                __DIR__ . '/../config/mymonitor-ping.php' => config_path('mymonitor-ping.php'),
+            ], 'config');
+        }
     }
     /**
      * Register bindings in the container.
