@@ -2,6 +2,18 @@
 
 this is a simple package to use uptime service in [MyMonitor/Servers-Mointor](https://google.com) project
 
+
+## Usage
+
+to ping any service just use the PingSdkFacade class like below example
+```php
+// $images->optimize();
+\MyMonitor\PingSdk\PingSdkFacade::ping('<Ping Key>');
+```
+
+**Note:** it will throw an HttpNotFoundException if the **Ping Key** is not valid
+
+
 ## Installation
 
 You can install this package via composer using this command:
