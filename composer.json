@@ -1,0 +1,23 @@
+{
+    "name": "my-monitor/ping-sdk",
+    "authors": [
+        {
+            "name": "Ahmed Ashraf",
+            "email": "ahmed29329@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MyMonitor\\PingSdk\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "~5.7",
+        "orchestra/testbench": "~3.3|~3.4"
+    }
+}
